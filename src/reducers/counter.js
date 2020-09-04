@@ -1,7 +1,7 @@
 import { actionsTypes } from "../type";
 
 const INITIAL_STATE = {
-  counter: 40
+  counter: 45
 }
 
 const reducers = (state = INITIAL_STATE, action) => {
