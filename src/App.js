@@ -1,13 +1,15 @@
 import React from 'react';
+import Counter from './screens';
 
-import Counter from './components'; 
 
-function App() {
-  return (
-    <div>
-     <Counter />
-    </div>
-  );
-}
+import { Provider } from "react-redux"
+import { store } from "./redux/store"
 
-export default App;
+
+const App = () => (
+  <Provider store={store}>
+      <Counter />
+  </Provider>
+);
+
+export default App
