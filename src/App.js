@@ -1,15 +1,23 @@
-import React from 'react';
-import Counter from './screens';
+import React, { Component } from 'react'
 
+import { Provider } from 'react-redux'
 
-import { Provider } from "react-redux"
-import { store } from "./redux/store"
+import { store } from './redux/store'
 
+import TodoList from './components/TodoList'
 
-const App = () => (
-  <Provider store={store}>
-      <Counter />
-  </Provider>
-);
+class App extends Component {
+
+	render() {
+		return (
+			<Provider store={ store }>
+				<div className="container">
+					<TodoList/>
+				</div>
+			</Provider>
+		)
+	}
+
+}
 
 export default App

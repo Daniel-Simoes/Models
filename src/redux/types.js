@@ -1,6 +1,8 @@
-const actionsTypes = {
-  COUNTER_DECREMENT: "COUNTER_DECREMENT",
-  COUNTER_INCREMENT: "COUNTER_INCREMENT",
+const ACTIONS = {
+  TODO_ADD: "TODO_ADD",
+  TODO_GET_ALL: "TODO_GET_ALL",
+  TODO_REMOVE: "TODO_REMOVE"
+  
 }
 
-export {actionsTypes}
+export {ACTIONS}

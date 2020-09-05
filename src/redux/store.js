@@ -1,7 +1,13 @@
-import { createStore } from "redux";
+import thunk from "redux-thunk"
 
-import { reducers } from "./reducers"
+import { createStore, applyMiddleware } from 'redux'
 
-const store = createStore(reducers)
 
-export{store}
+import {reducers} from './redurcers'
+
+
+const store = createStore(reducers, applyMiddleware(thunk))
+
+
+
+export { store }
